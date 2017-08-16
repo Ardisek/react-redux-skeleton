@@ -21,6 +21,7 @@ class Header extends Component {
     }
 
     renderLinks() {
+        //rendered header depends on login status
         if (this.props.isLogged) {
             return (
                 <div className="container">
@@ -28,8 +29,8 @@ class Header extends Component {
                         <a className="socials" href="/" target="_blank">
                             <i className="fa fa-facebook" aria-hidden="true"></i>
                         </a>
-                        <NavLink activeClassName="navbar-active" to="/konto">MOJE KONTO </NavLink>
-                        <Link onClick={this.logout} to="/">| WYLOGUJ</Link>
+                        <NavLink activeClassName="navbar-active" to="/konto">MY ACCOUNT </NavLink>
+                        <Link onClick={this.logout} to="/">| LOGOUT</Link>
                     </div>
                 </div>
             );
@@ -40,8 +41,8 @@ class Header extends Component {
                         <a className="socials" href="/" target="_blank">
                             <i className="fa fa-facebook" aria-hidden="true"></i>
                         </a>
-                        <NavLink activeClassName="navbar-active" to="/zaloguj">LOGOWANIE </NavLink>
-                        <NavLink activeClassName="navbar-active" to="/rejestracja">| REJESTRACJA</NavLink>
+                        <NavLink activeClassName="navbar-active" to="/zaloguj">SIGN IN </NavLink>
+                        <NavLink activeClassName="navbar-active" to="/rejestracja">| SIGN UP</NavLink>
                     </div>
                 </div>
             );
@@ -69,10 +70,10 @@ class Header extends Component {
                         <div className="collapse navbar-collapse" id="nav-collapse">
                             <ul className="nav navbar-nav navbar-right">
                                 <li key={1}>
-                                    <NavLink exact activeClassName="navbar-active" to="/ogloszenia">OGŁOSZENIA</NavLink>
+                                    <NavLink exact activeClassName="navbar-active" to="/ogloszenia">ANNOUNCEMENTS</NavLink>
                                 </li>
                                 <li key={2}>
-                                    <NavLink exact activeClassName="navbar-active" to="/uzytkownicy">UŻYTKOWNICY</NavLink>
+                                    <NavLink exact activeClassName="navbar-active" to="/uzytkownicy">USERS</NavLink>
                                 </li>
                             </ul>
                         </div>

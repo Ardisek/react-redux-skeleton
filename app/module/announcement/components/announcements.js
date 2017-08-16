@@ -15,6 +15,7 @@ class Announcements extends Component {
             isLoading
         } = this.props;
 
+        //not used because we dont have any api
         const announcements = items.map((item) => {
             return (
                 <div className="col-md-2">
@@ -30,6 +31,7 @@ class Announcements extends Component {
             <div className="container">
                 <div className="list-group row">
                     {/* {announcements} */}
+                    {/* these columns below just for presentation purposes */}
                     <div className="col-md-3">
                         <Link to={'/'} className="list-group-item active">
                             <h4 className="list-group-item-heading">lorem</h4>

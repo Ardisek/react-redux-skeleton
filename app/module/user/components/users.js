@@ -25,6 +25,7 @@ class Users extends Component {
             isLoading
         } = this.props;
 
+        //not used because we dont have any api
         const users = this.props.items.map((item) => {
             return (
                 <div className="row users-card">
@@ -45,6 +46,7 @@ class Users extends Component {
         return (
             <div className="container">
                 {/* {users} */}
+                {/* these row below just for presentation purposes */}
                 <div className="row users-card">
                     <div className="col-md-2 users-avatar">
                         <img src={avatar} />

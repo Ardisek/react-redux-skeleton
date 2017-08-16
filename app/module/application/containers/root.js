@@ -14,6 +14,8 @@ const store = createStoreWithMiddleware(reducers, /* preloadedState, */
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 const token = localStorage.getItem('token');
+
+//check if jwt token already exists
 if (token) {
     checkIsLogged().then(response => {
         store.dispatch({

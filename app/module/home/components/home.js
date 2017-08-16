@@ -24,6 +24,8 @@ class Home extends Component {
             isLoading
         } = this.props;
 
+
+        //not used because we dont have any api
         const categories = items.map((item) => {
             return (
                 <div className="col-md-3 col-sm-4 col-xs-6">

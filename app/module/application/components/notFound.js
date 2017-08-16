@@ -5,8 +5,8 @@ class NotFoundPage extends Component {
   render() {
     return (
       <div className="container">
-        <h1>404 - Nie Znaleziono</h1>
-        <p>Nie znaleziono strony!</p>
+        <h1>404 - not found</h1>
+        <p>Page not found!</p>
       </div>
     );
   }
